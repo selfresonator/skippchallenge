@@ -1,2 +1,14 @@
 angular.module('data.service', ['SearchCtrl'])
-.factory()
+.factory('SearchService', function($http) {
+  function(cityName) {
+    return $http({
+      method: 'GET',
+      url: '',
+      city: cityName
+    });
+  }
+
+  return {
+      searchCity: searchCity
+  };
+});
