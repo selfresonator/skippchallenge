@@ -1,0 +1,14 @@
+{
+  "name": "",
+  "version": "",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "method-override": "latest",
+    "morgan": "latest",
+    "nodemon": "latest"
+  }
+}

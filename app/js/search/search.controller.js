@@ -1,4 +1,4 @@
 angular.module('search.controller', [])
-.controller('SearchCtrl', function($scope) {
-  $scope.messge = 'Hello';
+.controller('SearchCtrl', function($scope, $route) {
+  $scope.message = 'Hello';
 });
