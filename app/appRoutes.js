@@ -6,6 +6,10 @@ angular.module('appRoutes', [])
       .when('/', {
           templateUrl: 'js/search/search.html',
           controller: 'SearchCtrl'
+      })
+      .when('/seating', {
+          templateUrl: 'js/seating/seating.html',
+          controller: 'SeatingCtrl'
       });
   }
 ]);
