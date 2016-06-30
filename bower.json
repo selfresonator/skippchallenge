@@ -1,0 +1,14 @@
+{
+  "name": "RestaurantStaticSite",
+  "version": "",
+  "description": "",
+  "ignore": [
+    "bower_components",
+    "app/libs"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest",
+    "angular-route": "latest"
+  }
+}
