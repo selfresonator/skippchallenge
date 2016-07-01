@@ -1,5 +1,5 @@
-<div>Search Restaurants In Any City:</div>
-<div class="form-group">
+<div class="search">Search Restaurants In Any City:</div>
+<div class="form-group search">
     <form>
         <input type="text" ng-model="place" placeholder="e.g. Sydney">
         <input type="submit" value="Search!" ng-click="clientQuery(place)" placeholder="Your City...">
@@ -7,17 +7,16 @@
     <div class="city">
       <h1>{{ place }}</h1>
     </div>
-
-    <section>
-      <div ng-repeat="restaurant in restaurants">
-        <div>
-          <h1><a href="#/seating">{{ restaurant.name }}</a></h1>
-          <h4>{{ restaurant.formatted_address }}</h4>
-          <h4>Rating: {{ restaurant.rating }}</h4>
-          <h4>Price Level: {{ restaurant.price_level }}
-        </div>
-        <hr>
-      </div>
-    </section>
-
 </div>
+
+<section class="padding">
+  <div ng-repeat="restaurant in restaurants">
+    <div>
+      <h2><a href="#/seating">{{ restaurant.name }}</a></h2>
+      <h4>{{ restaurant.formatted_address }}</h4>
+      <h4>Rating: {{ restaurant.rating }}</h4>
+      <h4>Price Level: {{ restaurant.price_level }}
+    </div>
+    <hr>
+  </div>
+</section>

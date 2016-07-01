@@ -1,3 +1,13 @@
+.square {
+    float:left;
+    position: relative;
+    width: 2%;
+    padding-bottom: 2%;
+    margin:0.2%;
+    overflow:hidden;
+    background-color: #00cccc;
+}
+
 .squareA {
     float:left;
     position: relative;
@@ -48,4 +58,30 @@
 .imgWrap:hover .time {
   visibility: visible;
   opacity: 1;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.padding {
+  padding-left: 3%;
+}
+
+.search {
+  padding-left: 3%;
+  font-size: 1.4em;
+}
+
+.sizes:hover{
+  color: orange;
+  -o-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -khtml-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+}
+
+.sizes {
+ font-size: 1.8em;
 }

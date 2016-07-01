@@ -10,10 +10,10 @@ angular.module('seating.controller', [])
   $scope.timeReserved;
   $scope.squareSelect = true;
   $scope.selectSeat = function() {
-    if ($scope.squareSelect === true) {
-      $scope.timeReserved = new moment().format('MMMM Do YYYY, h:mm:ss a');
-    } else {
+    if ($scope.squareSelect !== true) {
       $scope.timeReserved = $scope.timeReserved;
+    } else {
+      $scope.timeReserved = new moment().format('MMMM Do YYYY, h:mm:ss a');
     }
   };
 

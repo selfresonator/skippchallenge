@@ -1,15 +1,20 @@
-<div><h2>Choose a table size:</h2></div>
+<div class="padding"><h2>Choose a table size:</h2></div>
 
-<h3 ng-hide="selected">
-  <p ng-click="selectSize(2)" class="col-md-1">2</p>
-  <p ng-click="selectSize(4)" class="col-md-1">4</p>
-  <p ng-click="selectSize(8)" class="col-md-1">8</p>
-</h3>
-<br>
+<section  class="search">
+  <h2 class="sizes" ng-hide="selected">
+    <p ng-click="selectSize(2)" class="col-md-1">2</p>
+    <p ng-click="selectSize(4)" class="col-md-1">4</p>
+    <p ng-click="selectSize(8)" class="col-md-1">8</p>
+  </h2>
+  <br>
+  <h2 >Seating for {{ size }}:</h2>
+  <h3><div class="square" style="background-color:#00cccc"></div>Open</h3>
+  <h3><div class="square" style="background-color:#8088ff"></div>Reserved</h3>
+</section>
 
-<h2>Seating for {{ size }}:</h2>
-<h3></h3>
-<section ng-show="size == 2">
+
+
+<section class="padding" ng-show="size == 2">
   <div class="container">
   	<div class="row">
 
