@@ -1,15 +1,105 @@
 <div><h2>Choose a table size:</h2></div>
 
 <h3 ng-hide="selected">
-  <p ng-click="chooseSize(2)" class="col-md-1">2</p>
-  <p ng-click="chooseSize(4)" class="col-md-1">4</p>
-  <p ng-click="chooseSize(8)" class="col-md-1">8</p>
+  <p ng-click="selectSize(2)" class="col-md-1">2</p>
+  <p ng-click="selectSize(4)" class="col-md-1">4</p>
+  <p ng-click="selectSize(8)" class="col-md-1">8</p>
 </h3>
-<!-- <h3 class="col-md-1" ng-click="chooseSize(4)" ng-hide="selected">4</h3>
-<h3 class="col-md-1" ng-click="chooseSize(8)" ng-hide="selected">8</h3> -->
-<h2 >Seating for {{ size }}</h2>
-<section>
-  <div>
+<br>
 
+<h2>Seating for {{ size }}:</h2>
+<h3></h3>
+<section ng-show="size == 2">
+  <div class="container">
+  	<div class="row">
+
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+
+    </div>
   </div>
+</section>
+
+<section ng-show="size == 4">
+  <div class="container">
+  	<div class="row">
+
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+  	<div class="row">
+
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<section ng-show="size == 8">
+  <div class="container">
+  	<div class="row">
+
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+  	<div class="row">
+
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+  	<div class="row">
+
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+  	<div class="row">
+
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+      <div isolate ng-class="{'squareA':squareSelect, 'squareB':!squareSelect}" class="imgWrap" ng-click="squareSelect = !squareSelect; selectSeat()">
+        <p class="time">Last reserved at: {{ timeReserved }}</p>
+      </div>
+
+    </div>
+  </div>
+
 </section>

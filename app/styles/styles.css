@@ -1,0 +1,51 @@
+.squareA {
+    float:left;
+    position: relative;
+    width: 15%;
+    padding-bottom: 7.5%;
+    margin:0.2%;
+    overflow:hidden;
+    background-color: #00cccc;
+}
+
+.squareB {
+    float:left;
+    position: relative;
+    width: 15%;
+    padding-bottom: 7.5%;
+    margin:0.2%;
+    overflow:hidden;
+    background-color: #8088ff;
+}
+
+.squareA:hover {
+    color: #b50000;
+    opacity: 0.4;
+    text-decoration: none;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -khtml-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+}
+
+.squareB:hover {
+    color: #b50000;
+    opacity: 0.4;
+    text-decoration: none;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -khtml-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+}
+
+.time {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.imgWrap:hover .time {
+  visibility: visible;
+  opacity: 1;
+}

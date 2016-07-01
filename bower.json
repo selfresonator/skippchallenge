@@ -9,6 +9,12 @@
   "dependencies": {
     "bootstrap": "latest",
     "angular": "latest",
-    "angular-route": "latest"
+    "angular-route": "latest",
+    "moment": "^2.13.0",
+    "angular-moment": "^0.10.3"
+  },
+  "resolutions": {
+    "angular": "1.5.7",
+    "moment": "^2.13.0"
   }
 }
