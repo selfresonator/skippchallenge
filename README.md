@@ -1,11 +1,9 @@
-To install:
+To install(from root directory):
 
-(from root directory)
-1. npm install
+- npm install
 
-1. bower install
+- bower install
 
-To run:
+To run(from root directory):
 
-(from root directory)
 npm start
