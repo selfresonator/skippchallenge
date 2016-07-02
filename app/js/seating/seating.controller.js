@@ -16,8 +16,6 @@ angular.module('seating.controller', [])
       $scope.timeReserved = new moment().format('MMMM Do YYYY, h:mm:ss a');
     }
   };
-
-
 })
 .directive('isolate', function() {
     return {scope: true};

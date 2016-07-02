@@ -6,7 +6,6 @@ angular.module('search.controller', [])
     SearchService.searchCity(place)
       .then(function(data) {
         $scope.restaurants = data.data.results;
-        console.log($scope.restaurants);
       });
   };
 });
