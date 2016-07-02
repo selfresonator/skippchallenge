@@ -1,9 +1,9 @@
 To install:
 
 (from root directory)
--npm install
+1. npm install
 
--bower install
+1. bower install
 
 To run:
 
